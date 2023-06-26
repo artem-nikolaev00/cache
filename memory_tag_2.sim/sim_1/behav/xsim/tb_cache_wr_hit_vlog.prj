@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../memory_tag_2.gen/sources_1/ip/fifo_generator_1/sim/fifo_generator_1.v" \
+"../../../../memory_tag_2.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../memory_tag_2.srcs/sources_1/new/cache.v" \
+"../../../../memory_tag_2.srcs/sources_1/new/control_unit.v" \
+"../../../../memory_tag_2.srcs/sources_1/new/cpuIF.v" \
+"../../../../memory_tag_2.srcs/sources_1/new/memory_tag.v" \
+"../../../../memory_tag_2.srcs/sources_1/new/ram_if.v" \
+"../../../../memory_tag_2.srcs/sim_1/new/tb_cache_wr_hit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
